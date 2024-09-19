@@ -34,6 +34,7 @@ header h1 {
     background-color: lightslategray; 
     padding: 30px;
     width: 100%;
+    max-width: 1200px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
@@ -97,4 +98,32 @@ h3 {
 p {
     font-size: 1rem;
     color: #666;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#page-info {
+    font-size: 1.2rem;
+    margin: 0 10px;
 }
